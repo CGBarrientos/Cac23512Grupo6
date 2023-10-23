@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /* border: solid 1px red; */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  background-color: #ffffff;
+  color: #8c9090;
+  font-family: "poppins", sans-serif;
+}
+.pagecontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+/* -------estilos para el header--------  */
+.encab_naveg_menu {
+  background-color: #ae123a;
+  color: #ffffff;
+  max-height: 15vh;
+  width: 100vw;
+  padding: 35px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_logo {
+  width: 140px;
+}
+.nav_menu ul {
+  color: #ffffff;
+  font-weight: 400;
+  display: flex;
+  gap: 10px;
+}
+.nav_menu ul a {
+  color: #ffffff;
+}
+.nav_menu ul a:hover {
+  font-weight: 600;
+}
+
+
+/* -------contenedores--------  */
+.page_title {
+  color: #ae123a;
+  text-align: center;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_catalog {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.catalog_card {
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px 25px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.main {
+  width: 100%; /* Tamaño por defecto para todos los monitores */
+}
+
+
+.btn_float {
+  background-color:#8c9090;
+  color:#ffffff;
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  bottom: -10%;
+  right: 8%;
+  padding: 2px 12px;
+  text-align: center;
+  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.btn_sect {
+  background-color: #ae123a;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 2px 12px;
+}
+.btn_sect:hover {
+  scale: 1.05;
+}
+
+.catalog_card:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.catalog_card:nth-child(2) {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  background-color: #ae123a;
+  color: #ffffff;
+}
+.catalog_card:nth-child(2) .btn_sect {
+  background-color: #ffffff;
+  color: #ae123a;
+}
+
+.catalog_card:nth-child(3) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-color: #ae123a;
+  color: #ffffff;
+}
+.catalog_card:nth-child(3) .btn_sect {
+  background-color: #ffffff;
+  color: #ae123a;
+}
+.catalog_card img {
+  border-radius: 5px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 35px;
+  width: 40%;
+}
+
+/* -------formulario--------  */
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ae123a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ae123a;
+}
+.btn_sub {
+  border: transparent;
+  background-color: #ae123a;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+
+/* -------estilos para el footer--------  */
+footer {
+  background-color: #8c9090;
+  color: #ffffff;
+  width: 100vw;
+  padding: 35px 20px;
+}
+footer img {
+  float: right;
+  height: 50px;
+  position: relative;
+  bottom: 50%;
+}
+footer p h5 {
+  font-weight: 300;
+}
+footer h3 {
+  font-size: 1.5rem;
+}
+.footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+.footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.footer_icons i {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.footer_icons i:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+/* -------fin del footer--------  */
